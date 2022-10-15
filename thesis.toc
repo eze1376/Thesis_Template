@@ -1,0 +1,28 @@
+\textbf {\relax $\@@underline {\hbox {\beginR عنوان\endR }}\mathsurround \z@ $\relax }
+\hfill \textbf {\relax $\@@underline {\hbox {\beginR صفحه\endR }}\mathsurround \z@ $\relax }\par 
+\thispagestyle {plain}
+\contentsline {section}{فهرست تصاویر}{نه}{section*.2}%
+\contentsline {section}{فهرست جداول}{ده}{chapter*.3}%
+\contentsline {section}{چکیده}{1}{section*.5}%
+\contentsline {chapter}{\numberline {1}مقدمه}{2}{chapter.1}%
+\contentsline {section}{\numberline {1-1}پیشگفتار}{2}{section.1.1}%
+\contentsline {section}{\numberline {1-2}ساختار گزارش}{2}{section.1.2}%
+\contentsline {chapter}{\numberline {2}فصل دوم}{3}{chapter.2}%
+\contentsline {section}{\numberline {2-1}قمست اول}{3}{section.2.1}%
+\contentsline {section}{\numberline {2-2}جمع‌بندی}{3}{section.2.2}%
+\contentsline {chapter}{\numberline {3}فصل بعدی}{4}{chapter.3}%
+\contentsline {section}{\numberline {3-1}مقدمه}{4}{section.3.1}%
+\contentsline {section}{\numberline {3-2}جمع‌بندی}{4}{section.3.2}%
+\contentsline {chapter}{\numberline {4}روش پیشنهادی}{5}{chapter.4}%
+\contentsline {section}{\numberline {4-1}مقدمه}{5}{section.4.1}%
+\contentsline {section}{\numberline {4-2}جمع‌بندی}{5}{section.4.2}%
+\contentsline {chapter}{\numberline {5}آزمایش‌ها و نتایج}{6}{chapter.5}%
+\contentsline {section}{\numberline {5-1}مقدمه}{6}{section.5.1}%
+\contentsline {section}{\numberline {5-2}جمع‌بندی}{6}{section.5.2}%
+\contentsline {chapter}{\numberline {6}نتیجه‌گیری و پیشنهادها}{7}{chapter.6}%
+\contentsline {section}{\numberline {6-1}نتیجه‌گیری}{7}{section.6.1}%
+\contentsline {section}{\numberline {6-2}پیشنهاد‌ها}{7}{section.6.2}%
+\contentsline {chapter}{\numberline {آ}بخشی از پیوست}{8}{appendix.Alph1}%
+\contentsline {section}{\numberline {آ-1}پیوست اول}{8}{section.Alph1.1}%
+\contentsline {section}{چکیده انگلیسی}{9}{section*.6}%
+\contentsline {section}{مراجع}{9}{section*.6}%

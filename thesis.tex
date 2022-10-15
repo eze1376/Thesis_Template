@@ -1,0 +1,72 @@
+\documentclass[a4paper,fleqn]{report} 
+
+\include{preamble}
+
+\begin{document}
+
+\pagenumbering{adadi}
+\pagestyle{plain}
+
+\include{contents/firstPages}
+
+\titleformat{\chapter}[display]{\normalfont\LARGE\bfseries\centering}{\chaptertitlename ~ \tartibi{chapter}}{20pt}{\LARGE}
+\newgeometry{left=2.5cm,right=3cm,top=3cm,bottom=2.5cm,includehead=false,headsep=1cm,footnotesep=.5cm}
+\baselineskip=.7cm
+
+\addtocontents{toc}{\textbf{\underline{عنوان}}}
+\addtocontents{toc}{\hfill\textbf{\underline{صفحه}}\par}
+\tableofcontents
+\addtocontents{toc}{\protect\thispagestyle{plain}}
+\pagebreak
+
+\phantomsection
+\addcontentsline{toc}{section}{فهرست تصاویر}
+\listoffigures
+\addtocontents{lof}{\protect\thispagestyle{plain}}
+\pagebreak
+
+%\phantomsection
+\addcontentsline{toc}{section}{فهرست جداول}
+\listoftables
+\addtocontents{lot}{\protect\thispagestyle{plain}}
+\pagebreak
+
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\include{contents/abstract}
+
+
+\titlespacing*{\chapter}{0pt}{3.5cm}{6cm}
+\titleformat{\chapter}[display]{\normalfont\LARGE\bfseries\raggedright}{\chaptertitlename ~ \tartibi{chapter}}{20pt}{\LARGE}
+
+\newgeometry{left=2.5cm,right=3cm,top=3cm,bottom=2.5cm,includehead=false,headsep=1cm,footnotesep=.5cm}
+\settextfont{XB Zar}\fontsize{12}{6}\selectfont
+\setlatintextfont{Times New Roman}\fontsize{12}{6}
+\baselineskip=.9cm
+
+\pagestyle{myheadings}
+
+\include{contents/chapter1}
+\include{contents/chapter2}
+\include{contents/subsections/ROSGazebo}
+\include{contents/subsections/ProposedApproach}
+\include{contents/ExperimentsResults}
+\include{contents/subsections/Conclusion}
+\include{contents/subsections/Attach}
+
+
+\renewcommand{\bibname}{مراجع}
+\phantomsection
+\addcontentsline{toc}{section}{مراجع}
+\baselineskip=.7cm
+\setLTRbibitems
+\bibliographystyle{unsrt}
+\bibliography{contents/references}
+
+\include{contents/abstract_en}
+
+\include{contents/lastPages}
+
+\end{document}

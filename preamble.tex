@@ -1,0 +1,115 @@
+
+\usepackage{hyperref}
+\hypersetup{
+	pdftitle=پایان نامه کارشناسی ارشد مهندسی کامپیوتر - هوش مصنوعی, 
+	pdfsubject=عنوان پایان‌نامه,
+	pdfauthor=نام و نام خانوادگی, 
+	%			pdfkeywords=,
+	%			pdfproducer=,
+	pdfcreator=LaTeX,
+	%			pagebackref=true,
+	%			hypertexnames=false,
+	%			colorlinks=true, 
+	%			allcolors=blue,
+	hidelinks
+}
+\usepackage[all]{hypcap}
+%\usepackage{backref}
+
+\usepackage{amsthm,amssymb,amsmath}			% Writing math
+\DeclareMathOperator*{\argmin}{argmin}
+\DeclareMathOperator*{\argmax}{argmax}
+
+\usepackage{comment}
+
+\usepackage{multicol,multirow}
+
+\usepackage{listings}
+\usepackage{xcolor}
+\lstset { %
+	tabsize=4,
+	backgroundcolor=\color{black!5}, % set backgroundcolor
+	basicstyle=\footnotesize,% basic font setting
+	frame=trbl,
+	%	framesep=5pt,
+	%	framexleftmargin=.5cm,
+	numbers=left,
+}
+\makeatletter
+\newcommand{\fakelabel}[2]{\def\@currentlabel{#2}\label{#1}}
+\makeatother
+
+
+\usepackage{algorithm,algpseudocode}
+\usepackage{etoolbox}
+
+\usepackage{tikz}
+\usetikzlibrary{tikzmark}
+\usetikzlibrary{quotes,angles, calc}
+\errorcontextlines\maxdimen
+\newcommand{\ALGtikzmarkcolor}{gray}% customise this, if you want
+\newcommand{\ALGtikzmarkextraindent}{4pt}% customise this, if you want
+\newcommand{\ALGtikzmarkverticaloffsetstart}{-1.5ex}% customise this, if you want
+\newcommand{\ALGtikzmarkverticaloffsetend}{-.5ex}% customise this, if you want
+\makeatletter
+\newcounter{ALG@tikzmark@tempcnta}
+\newcommand\ALG@tikzmark@start{%
+	\global\let\ALG@tikzmark@last\ALG@tikzmark@starttext%
+	\expandafter\edef\csname ALG@tikzmark@\theALG@nested\endcsname{\theALG@tikzmark@tempcnta}%
+	\tikzmark{ALG@tikzmark@start@\csname ALG@tikzmark@\theALG@nested\endcsname}%
+	\addtocounter{ALG@tikzmark@tempcnta}{1}%
+}
+\def\ALG@tikzmark@starttext{start}
+\newcommand\ALG@tikzmark@end{%
+	\ifx\ALG@tikzmark@last\ALG@tikzmark@starttext
+	\else
+	\tikzmark{ALG@tikzmark@end@\csname ALG@tikzmark@\theALG@nested\endcsname}%
+	\tikz[overlay,remember picture] \draw[\ALGtikzmarkcolor] let \p{S}=($(pic cs:ALG@tikzmark@start@\csname ALG@tikzmark@\theALG@nested\endcsname)+(\ALGtikzmarkextraindent,\ALGtikzmarkverticaloffsetstart)$), \p{E}=($(pic cs:ALG@tikzmark@end@\csname ALG@tikzmark@\theALG@nested\endcsname)+(\ALGtikzmarkextraindent,\ALGtikzmarkverticaloffsetend)$) in (\x{S},\y{S})--(\x{S},\y{E});%
+	\fi
+	\gdef\ALG@tikzmark@last{end}%
+}
+\apptocmd{\ALG@beginblock}{\ALG@tikzmark@start}{}{\errmessage{failed to patch}}
+\pretocmd{\ALG@endblock}{\ALG@tikzmark@end}{}{\errmessage{failed to patch}}
+\makeatother
+
+
+\usepackage{tabularx}
+\usepackage{epsf,graphicx,pdfpages}			% Including graphics
+\usepackage[labelformat=simple]{subfig}		% Sub Figure
+\renewcommand{\thesubfigure}{(\alph{subfigure})}
+\usepackage[a4paper]{geometry}				% Fixing page layout and margins
+\usepackage{titlesec}						% Change chapter and section titles
+\usepackage{setspace}						% Change line spacing
+\usepackage[stable,bottom]{footmisc}		% Move footnotes to the bottom of page
+\usepackage{zref-perpage}
+\usepackage{cleveref}
+\zmakeperpage[1]{footnote}
+\usepackage{xepersian}						% Persian
+\usepackage{fontspec}
+\settextfont{XB Zar}						% Persian font
+\DefaultMathDigits							% Use English digits in equations
+\setfootnoteLR								% Default footnotes from left to right
+\assignpagestyle{\chapter}{empty}			% No page numbers on the first page of a chapter
+\SepMark{-}									% Use dash instead of dot in section numbers
+\setcounter{secnumdepth}{5}					% Section numbering depth
+\setcounter{tocdepth}{5}					% Section showing in table of content
+						
+\usetikzlibrary{shapes,arrows,positioning,automata} 	%  Create Flowchart
+
+\makeatletter								% Use English numbers for English footnotes
+\def\@makeLTRfnmark{\hbox{\@textsuperscript{\latinfont\@thefnmark}}}
+\renewcommand\@makefntext[1]{%
+	\parindent 1em%
+	\noindent
+	\hb@xt@1.8em{\hss\if@RTL\@makefnmark\else\@makeLTRfnmark\fi}#1}
+\makeatother
+
+
+\titlespacing*{\section}{0pt}{1cm}{0.2cm}
+\titleformat{\section}{\fontsize{13}{6}\scshape\bfseries}{\thesection}{1em}{}
+
+\titlespacing*{\subsection}{0pt}{.8cm}{0cm}
+\titleformat{\subsection}{\fontsize{11}{6}\scshape\bfseries}{\thesubsection}{1em}{}
+
+\titlespacing*{\subsubsection}{0pt}{.6cm}{0cm}
+\titleformat{\subsubsection}{\fontsize{11}{6}\scshape\bfseries}{\thesubsubsection}{1em}{}
